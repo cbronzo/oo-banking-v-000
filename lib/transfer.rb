@@ -9,12 +9,13 @@ class Transfer
   end
   
   def valid?
-end
+    
+  end
 
-def execute_transaction
-end
+  def execute_transaction
+  end
 
-def reverse_transfer
-end
+  def reverse_transfer
+  end
     
 end
