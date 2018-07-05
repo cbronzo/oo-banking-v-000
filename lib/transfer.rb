@@ -13,6 +13,8 @@ class Transfer
   end
 
   def execute_transaction
+    if sender.valid? == false
+      @status = "rejected"
   end
 
   def reverse_transfer
