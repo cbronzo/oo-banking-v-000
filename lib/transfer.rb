@@ -14,7 +14,7 @@ class Transfer
 
   def execute_transaction
     
-    if !sender.valid? 
+    if both_valid?
       @staus = "rejected"
        "Transaction rejected. Please check your account balance."
     end
