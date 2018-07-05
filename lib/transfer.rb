@@ -17,6 +17,7 @@ class Transfer
     if @amount < @sender.balance && valid?
       sender.transfer
       sender.balance(amount)
+      status = "complete"
     else
       @staus = "rejected"
       "Transaction rejected. Please check your account balance."
