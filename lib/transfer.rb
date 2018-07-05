@@ -16,7 +16,7 @@ class Transfer
     
     if !sender.valid? 
       @staus = "rejected"
-      "Transaction rejected. Please check your account balance."
+      return "Transaction rejected. Please check your account balance."
     end
   end
 
