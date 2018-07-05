@@ -15,6 +15,7 @@ class Transfer
   def execute_transaction
     
     if @amount < @sender.balance && valid?
+      sender.transfer
       sender.balance(amount)
     else
       @staus = "rejected"
