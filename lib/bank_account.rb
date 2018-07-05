@@ -13,7 +13,7 @@ def deposit(amount)
 end
 
 def display_balance
-  You
+  puts "Your balance is $#{balance}."
 end
 
 def valid?
