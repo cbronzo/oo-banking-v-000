@@ -15,8 +15,8 @@ class Transfer
   def execute_transaction
     
     if @amount < @sender.balance && valid?
-      sender.deposit()
-      receiver.balance(amount)
+      sender.deposit(@amount)
+      receiver.balance(@amount)
       @status = "complete"
     else
       @staus = "rejected"
