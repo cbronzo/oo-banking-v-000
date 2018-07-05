@@ -16,7 +16,7 @@ class Transfer
     
     if @amount < @sender.balance && valid?
       sender.deposit
-      sender.balance(amount)
+      receiver.balance(amount)
       @status = "complete"
     else
       @staus = "rejected"
